@@ -1,1 +1,5 @@
 this is the note for day01 session!!!
+
+created a simple script named my script..
+
+script welcome a user and give the present working direcctory..
