@@ -1,0 +1,57 @@
+-f File Test Operator in Bash
+
+-f is a Bash file test operator used with if conditions.
+It checks whether a given path exists and is a regular file.
+
+Syntax
+[ -f "path" ]
+
+Meaning
+
+Returns true if the file exists and is a regular file
+
+Returns false if the file does not exist or is not a regular file
+
+Usage in this script
+if [ -f "$1" ]; then
+  echo "File exists"
+else
+  echo "File does not exist"
+fi
+
+
+$1 represents the first argument passed to the script
+
+The script checks exactly the path provided as input
+
+Example commands
+./check_file.sh test.txt
+./check_file.sh /etc/passwd
+./check_file.sh ../notes.txt
+
+
+The script works with:
+
+Current directory files
+
+Relative paths
+
+Absolute paths
+
+It is not limited to the present directory.
+
+Notes
+
+-f checks only regular files
+
+It does not match directories or special files
+
+Related file test operators
+Operator  Description
+-f  Regular file exists
+-d  Directory exists
+-e  File exists (any type)
+-r  File is readable
+-w  File is writable
+-x  File is executable
+
