@@ -1,0 +1,8 @@
+
+--this is about exit codes
+
+$? <--- is the variable used to store the command is success or not 
+
+even if one line is successfully worked then $? is assigned 0 else 1 
+
+we can assign any value with 'exit 323' syntax
